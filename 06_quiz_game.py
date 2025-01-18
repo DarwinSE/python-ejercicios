@@ -36,3 +36,23 @@ for question in questions:
         print(f'La respuesta correcta era: {answers[question_num]}')
 
     question_num += 1
+
+print('---------------------')
+print('     RESULTADOS      ')
+print('---------------------')
+
+print('Respuestas: ', end = '')
+for answer in answers:
+    print(answer, end = ' ')
+
+print()
+
+print('Respuestas Correctas: ', end = '')
+for guess in guesses:
+    print(guess, end = ' ')
+
+print()
+
+score = int(score / len(questions) * 100)
+
+print(f'Tu puntaje es: {score}%')
